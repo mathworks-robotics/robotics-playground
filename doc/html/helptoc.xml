@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding="utf-8"?>
+
+<toc version="3.0">
+<!-- First tocitem specifies top level in Help browser Contents pane -->
+<!-- This can be a roadmap page, as shown below, or a content page -->
+    <tocitem target="GettingStarted.html">Robotics Playground Toolbox
+        <!-- Nest tocitems to create hierarchical entries in  Contents-->
+        <!-- To include icons, use the following syntax for tocitems: -->
+        <!-- <tocitem target="foo.html" image="HelpIcon.NAME"> -->        <!-- Title-of-Section </tocitem> -->
+        <!-- where NAME is one of the following (use capital letters): -->
+        <!-- FUNCTION, USER_GUIDE, EXAMPLES, BLOCK, GETTING_STARTED, -->
+        <!-- DEMOS, RELEASE_NOTES --> 
+        <!-- Icon images used for these entries are also stored in -->
+        <!-- matlabroot/toolbox/matlab/icons -->
+        <!-- A Getting Started Guide usually comes first -->        
+        <!-- Block reference next -->
+        <!-- First item is page describing function categories, if any -->
+        <tocitem target="Blocks.html" 
+                 image="HelpIcon.FUNCTION">Block Reference
+            <!-- First category, with link to anchor in above page -->
+            <tocitem target="Environments.html">Environments
+                <!-- Inside category, list its functions alphabetically -->
+                <tocitem target="obstacle_arena.htm">Obstacle Environment</tocitem>
+                <tocitem target="object_arena.htm">Object Environment</tocitem>
+                <tocitem target="sumo_game.htm">Sumo Game</tocitem>
+                <tocitem target="MATLAB_robot.htm">MATLAB Disc Robot</tocitem>
+                <!-- ... -->
+            </tocitem>
+            <!-- Second category, with link to anchor in above page -->
+            <tocitem target="Sensors.html">Sensors
+                <!-- Inside category, list its functions alphabetically -->
+                <tocitem target="motor.htm">Robot Motor</tocitem>
+                <tocitem target="encoder_sensor.htm">Encoder</tocitem>
+                <tocitem target="distance_sensor.htm">Distance Sensor</tocitem>
+                <tocitem target="gyro_sensor.htm">Gyro Sensor</tocitem>
+                <tocitem target="compass_sensor.htm">Compass Sensor</tocitem>
+                <tocitem target="contact_switch.htm">Contact Switch</tocitem>
+                <tocitem target="360_sensor.htm">360 Range Sensor</tocitem>
+                <tocitem target="object_sensor.htm">Object Sensor</tocitem>
+                <!-- ... -->
+             </tocitem>
+        </tocitem>
+         <!-- Function reference next -->
+        <!-- First item is page describing function categories, if any -->
+        <tocitem target="mlrobot_doc.html" 
+                 image="HelpIcon.FUNCTION">Function Reference (MATLAB Robot API)
+
+                <!-- Inside category, list its functions alphabetically -->
+                <tocitem target="mlrobot_doc.html">mlrobot</tocitem>
+                <tocitem target="mlrobotstart_doc.html">mlrobotstart</tocitem>
+                <tocitem target="mlrobotstop_doc.html">mlrobotstop</tocitem>
+                <tocitem target="mlrobotsetmotorvoltage_doc.html">mlrobotsetmotorvoltage</tocitem>
+                <tocitem target="mlrobotreadwheelspeed_doc.html">mlrobotreadwheelspeed</tocitem>
+                <tocitem target="mlrobotreadcompassangle_doc.html">mlrobotreadcompassangle</tocitem>
+                <!-- ... -->
+        </tocitem>
+    </tocitem>
+</toc>
