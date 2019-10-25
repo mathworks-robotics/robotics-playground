@@ -3,7 +3,7 @@ clc
 
 %% Install toolbox
 
-matlab.addons.install('Robotics Playground.mltbx')
+matlab.addons.install(which('Robotics Playground.mltbx'))
 
 %% Only add files to MATLAB path
 % Note that by only adding the files to the MATLAB path the Application and
