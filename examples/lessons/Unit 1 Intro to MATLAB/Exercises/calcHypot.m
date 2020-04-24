@@ -1,5 +1,5 @@
 function c = calcHypot(a,b)
-%calcHypoth
+%calcHypoth Solution
 
 % This function calculates the hypothenuse given the length
 % of two for the sides of a right triangle
