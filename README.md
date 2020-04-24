@@ -1,4 +1,4 @@
-# Robotics Playground
+# Robotics Playground [![View Robotics Playground on File Exchange](https://www.mathworks.com/matlabcentral/images/matlab-file-exchange.svg)](https://www.mathworks.com/matlabcentral/fileexchange/67157-robotics-playground)
 Copyright 2019 The MathWorks, Inc.
 # Description
 MATLAB and Simulink  library of virtual environments designed to aid in the teaching of basic concepts in robotics such as driver control, autonomy programming, obstacle avoidance and object interactions.
