@@ -1,5 +1,6 @@
 *.asv
 *.slxc
 slprj
+*.autosave
 ## temporal office files
 ~$*     
