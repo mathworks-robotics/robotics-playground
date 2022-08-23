@@ -26,7 +26,11 @@ classdef ObjectDetectorRP < matlab.System & matlab.system.mixin.CustomIcon & mat
 
     %% METHODS
     methods(Access = protected)
-        
+
+        function flag = isInputSizeMutableImpl(~,~)
+            flag = true;
+        end
+
         % Setup method: Initializes all necessary graphics objects
         function setupImpl(obj)
             
