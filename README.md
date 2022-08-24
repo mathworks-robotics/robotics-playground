@@ -1,5 +1,5 @@
 # Robotics Playground [![View Robotics Playground on File Exchange](https://www.mathworks.com/matlabcentral/images/matlab-file-exchange.svg)](https://www.mathworks.com/matlabcentral/fileexchange/67157-robotics-playground)
-[Open in MATLAB Online](https://matlab.mathworks.com/open/github/v1?repo=mathworks-robotics/robotics-playground&project=RPInstall.mlx)
+[Open in MATLAB Online](https://matlab.mathworks.com/open/github/v1?repo=mathworks-robotics/robotics-playground&file=RPInstall.mlx)
 
 Copyright 2019 The MathWorks, Inc.
 # Description
