@@ -37,17 +37,28 @@ if size(envBlk)==1
     % Disable link so that the changes can be saved with the model
     set_param(block,'LinkStatus','breakWithoutHierarchy');
     
-    Arena.width=eval(get_param(block,'arenaWidth'));
     Arena.length=eval(get_param(block,'arenaLength'));
+    Arena.width=eval(get_param(block,'arenaWidth'));
     
-    for idx=1:10
-        Arena.obj(idx).status=get_param(block,strcat('obs',num2str(idx)));
-        Arena.obj(idx).position=eval(get_param(block,strcat('obsPose',num2str(idx))));
-        Arena.obj(idx).width=eval(get_param(block,strcat('obsWidth',num2str(idx))));
-        Arena.obj(idx).length=eval(get_param(block,strcat('obsLength',num2str(idx))));
+    obstacles=eval(get_param(block,'obstacles'));
+    
+    create_and_delete_blocks(obstacles,block) % update obstacles 
+    
+    for idx=1:size(obstacles,1)
+        Arena.obj(idx).recPose=obstacles(idx,:);
+        
+        pos=obstacles(idx,[1,2]);
+        length=obstacles(idx,3);
+        width=obstacles(idx,4);
+    
+        Arena.obj(idx).status='on';
+        Arena.obj(idx).position=pos + [length,width]/2;
+        Arena.obj(idx).length=length;
+        Arena.obj(idx).width=width;
+        
     end
-    mapForSim=PlaygroundCreateSimMap(Arena,envBlk{1});
-    ws=get_param(gcs,'modelworkspace');
+    mapForSim=PlaygroundCreateSimMap(Arena,block);
+    ws=get_param(model,'modelworkspace');
     
     try
         ws.assignin('mapForSim',mapForSim);
